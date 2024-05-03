@@ -1,25 +1,15 @@
 #content {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 } 
 
 #content h3{
-    /* Coleção */
-    position: absolute;
-    width: 168px;
-    height: 24px;
-    left: calc(50% - 168px/2);
-    top: 224px;
-
     font-family: 'Press Start 2P';
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 24px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
+    margin-bottom: 3rem;
 
     color: #FFFFFF;
 
@@ -27,72 +17,48 @@
 }
 
 #content button {
-    position: absolute;
+    margin-top: 15rem;
     width: 446px;
     height: 70px;
-    left: 497px;
-    top: 844px;
-    
     background: #D9D9D9;
     border-radius: 5px;
 }
 
 
 #colecao{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 132px;
-    
-    position: absolute;
-    width: 1060px;
-    height: 288px;
-    left: calc(50% - 1060px/2);
-    top: 307px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1.2rem;
 }
 
 .card {
     /* Card */
-    width: 464px;
-    height: 288px;
-
+    width: 400px;
+    padding: 1px;
     filter: drop-shadow(0px 4px 12.6px rgba(0, 0, 0, 0.25));
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     background: #E2E2E2;
     border-radius: 8px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo {
     /* MELHOR JOGO DE 86 */
-    display: block;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2rem;
     text-align: center;
 
     font-family: 'Press Start 2P';
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;
-
     color: #BD00FF;
 }
 
 
 .card img {
-    /* image 6 */
-    position: absolute;
-    width: 171px;
-    height: 185px;
-    left: 146px;
-    top: 66px;
+    width: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem ;
 }
