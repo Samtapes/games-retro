@@ -5,10 +5,16 @@ document
 
         const form = document.querySelector("form");
 
+        if (form.titulo.value === "" && form.descricao.value === "" && form.preco.value === ""){
+            alert("Não foi possível cadastrar o novo item, pois o formulário está nulo!")
+            return;
+        }
+
         var item = {
             id: new Date().getTime(),
             titulo: form.titulo.value,
-            descricao: form.descricao.value
+            descricao: form.descricao.value,
+            preco: form.preco.value
         };
 
         salvar(item);

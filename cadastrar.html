@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/novo-item.css">
+    <link rel="stylesheet" href="./src/css/cadastrar.css">
     <script src="./src/cadastrar.js" defer></script>
 </head>
 <body>
@@ -26,12 +26,16 @@
 
     <section id="content">
         <h3>NOVO ITEM</h3>
+        <a href="colecao.html"><button>VOLTAR</button></a>
         <form>
             <label for="titulo">TITULO</label>
             <input type="text" name="titulo" id="titulo">
 
             <label for="descricao">DESCRICAO</label>
             <input type="text" name="descricao" id="descricao">
+
+            <label for="preco">PRECO</label>
+            <input type="number" step="0.01" name="preco" id="preco">
 
             <button>SALVAR</button>
         </form>

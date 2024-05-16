@@ -16,8 +16,9 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#content button {
-    margin-top: 15rem;
+#content a button {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     width: 446px;
     height: 70px;
     background: #D9D9D9;
@@ -44,7 +45,6 @@
 }
 
 .titulo {
-    /* MELHOR JOGO DE 86 */
     margin-top: 2rem;
     text-align: center;
 
@@ -54,6 +54,9 @@
     color: #BD00FF;
 }
 
+.card p {
+    text-align: center;
+}
 
 .card img {
     width: 10rem;
@@ -61,4 +64,27 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem ;
+}
+
+.card div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.minus {
+    background-color: red;
+    color: white;
+}
+
+.plus {
+    background-color: green;
+    color: white;
+}
+
+.delete {
+    background-color: rgb(151, 36, 36);
+    color: white;
 }
